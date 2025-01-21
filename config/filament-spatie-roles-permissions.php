@@ -115,7 +115,7 @@ return [
      * }
      *
      */
-    'user_name_searchable_columns' => 'name',
+    'user_name_searchable_columns' => ['name'],
 
     /*
      * Icons to use for navigation
