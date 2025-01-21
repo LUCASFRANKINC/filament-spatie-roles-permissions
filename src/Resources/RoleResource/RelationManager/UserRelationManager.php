@@ -64,7 +64,7 @@ class UserRelationManager extends RelationManager
 
             ])->headerActions([
                 AttachAction::make()
-                    ->recordSelectSearchColumns(config('filament-spatie-roles-permissions.user_name_searchable_columns', 'name'))
+                    ->recordSelectSearchColumns(config('filament-spatie-roles-permissions.user_name_searchable_columns', ['name']))
                     ->recordTitle(function ($record) {
                         return $record->getAttributeValue(config('filament-spatie-roles-permissions.user_name_column', 'name'));
                     }),
